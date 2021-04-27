@@ -1,0 +1,135 @@
+@font-face {
+    src: url(../fonts/giiber.ttf);
+    font-family: giiber;
+}
+
+@font-face {
+    src: url(../fonts/giiber2.ttf);
+    font-family: giiber2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    user-select: none;
+    color: #fff;
+}
+
+nav {
+    background-color: #101010;
+    font-family: giiber2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 13vh;
+}
+
+nav>h1 {
+    color: #fff;
+}
+
+.reproductor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	/*border: 1px solid red;*/
+	margin-top: 20px;
+}
+
+.caratula {
+	width: 1fr;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.caratula > img {
+	width: 350px;
+	border-radius: 15px;
+}
+
+
+
+
+/* botones */
+.player {
+	margin: 15px 0;
+}
+
+#playpausebtn.playToggle {
+	background-color: #202020;
+}
+
+#mutebtn.muteToggle {
+	background-color: #4800FF;
+}
+
+button {
+	width: 1fr;
+	height: 1fr;
+	padding: 10px;
+
+	border-radius: 0px;
+	border: none;
+	position: fixed;
+	top: 22px;
+	left: 15px;
+	font-weight: bold;
+	font-family: giiber2;
+	font-size: 18px;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+}
+
+menu {
+	transition: 0.5s ease, opacity 1s;
+	font-family: giiber2;
+	background-color: #101010;
+	border-radius: 10px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+
+	width: 350px;
+	bottom: -200px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+}
+
+menu > a {
+	margin: 5px;
+	cursor: pointer;
+	transition: 0.1s;
+	font-weight: bold;
+	font-family: giiber2;
+	font-size: 20px;
+}
+
+menu > a:hover{
+	color: #0048FF;
+}
+
+menu > a:active{
+	color: #0048FF;
+}
+
+menu.menubottom {
+	bottom: 20px;
+	opacity: 1;
+}

@@ -1,64 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<link rel="icon" href="img/icons/main.jpg">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tellote | Music</title>
-
-	<link rel="stylesheet" href="css/GiiberJs.css">
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/icons/main.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tellote | Music</title>
+    <link rel="stylesheet" href="css/GiiberJs.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-	
-	<nav>
-		<h1>Tellote | Music </h1>
-	</nav>
-
-	<div class="reproductor">
-		<div class="caratula">
-			<img src="img/neutro.jpg" alt="">
-		</div>
-
-		<div class="player">
-	<!-- Pause Button -->
-<div id="playpausebtn"> Play </div>
-	<!-- Seek Slider -->
-<input id="seekslider" type="range" min="0" max="100" value="0" step="1">
-	<!-- Mute Button -->
-<div id="mutebtn"> Mute </div>
-	<!-- Div Content Time -->
-
-	
-	<!-- Volume Slider -->
-<input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
-
-<div id="tirbox">
-		<!-- Time Box -->
-			<span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
-	</div>
-
-	<!-- Music Changer 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v10.0" nonce="KCzGC9kv"></script>
+    <nav>
+        <h1>Tellote | Music </h1>
+    </nav>
+    <div class="reproductor">
+        <div class="caratula">
+            <img src="img/neutro.jpg" alt="">
+        </div>
+        <div class="player">
+            <!-- Pause Button -->
+            <div id="playpausebtn"> Play </div>
+            <!-- Seek Slider -->
+            <input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+            <!-- Mute Button -->
+            <div id="mutebtn"> Mute </div>
+            <!-- Div Content Time -->
+            <!-- Volume Slider -->
+            <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+            <div id="tirbox">
+                <!-- Time Box -->
+                <span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+            </div>
+            <!-- Music Changer 
 <div id="change"> Change </div>
 -->
-</div>
-	</div>
+        </div>
+    </div>
+    <button>Toca aqui</button>
+    <menu>
+        <a id="cone">Neutro Shorty -- La Cone </a>
+        <a id="hope">Neutro Shorty -- Hope</a>
+        <a id="laoriginal">Neutro Shorty -- La Original</a>
+        <a id="cafune">Micro TDH -- Cafuné </a>
+        <a id="dime">Micro TDH -- Dime Cuantas Veces</a>
+    </menu>
 
-<button>Toca aqui</button>
+   <div class="fb-comments" data-href="https://tufowin.github.io/tellote/" data-width="100%" data-numposts="3"></div>
 
-<menu>
-	<a id="cone">Neutro Shorty -- La Cone </a>
-
-	<a id="hope">Neutro Shorty -- Hope</a>
-
-	<a id="laoriginal">Neutro Shorty -- La Original</a>
-
-	<a id="cafune">Micro TDH -- Cafuné </a>
-
-	<a id="dime">Micro TDH -- Dime Cuantas Veces</a>
-</menu>
-
-	<script src="js/GiiberJs.min.js"></script>
-	<script src="js/main.js"></script>
+  
+    <script src="js/GiiberJs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
